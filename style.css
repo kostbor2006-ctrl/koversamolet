@@ -1,0 +1,292 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #222;
+}
+
+/* Header */
+header {
+    background: red;
+    color: yellow;
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.city {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Навігація */
+nav {
+    background: #000;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Секції */
+section {
+    padding: 30px 15px;
+    max-width: 1000px;
+    margin: auto;
+}
+/* ===== МОБИЛЬНОЕ МЕНЮ ===== */
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    nav a {
+        width: 100%;
+        max-width: 320px;
+        text-align: center;
+        background: #ff0000;
+        color: #fff;
+        padding: 14px 10px;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 10px;
+        text-decoration: none;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    nav a:active {
+        transform: scale(0.97);
+        background: #cc0000;
+    }
+}
+/* Герой */
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+    background: #f5f5f5;
+}
+
+.price {
+    font-size: 28px;
+    color: red;
+    font-weight: bold;
+}
+
+.guarantee {
+    font-size: 18px;
+    color: green;
+}
+
+.hero-photo img {
+    max-width: 1000px;
+    display: block;
+    margin: 20px auto 0;
+    border-radius: 10px;
+}
+.hero-photo {
+    max-width: 1000px;
+    margin: 20px auto 0;
+}
+
+.hero-video {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+@media (max-width: 600px) {
+    .hero-video {
+        max-height: 220px;
+    }
+}
+/* Галерея обладнання */
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    flex: 1 1 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.gallery-item.large img {
+    width: 110%;
+    height: 178px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.gallery-item p {
+    margin-top: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Текст і ціни для обладнання та послуг */
+.highlight-text {
+    font-weight: bold;
+    font-size: 18px;
+    color: #222;
+    text-align: center;
+}
+.hero-video {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto 0;
+}
+@media (max-width: 600px) {
+    .hero-video {
+        max-height: 220px; /* оптимально для телефона */
+        border-radius: 8px;
+    }
+}
+.highlight-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Прання килимів */
+.washing-equipment {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.equipment-item {
+    flex: 1 1 48%;
+    text-align: center;
+}
+
+.equipment-item.large img {
+    max-height: 500px; /* Зменшено висоту зображень */
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Роздільник */
+.separator {
+    width: 50px;
+    border: 2px solid red;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+/* Стирка курточок */
+#jackets h2 strong {
+    color: red;
+    font-size: 22px;
+}
+
+.jackets-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.jackets-left, .jackets-right {
+    flex: 1 1 50%;
+}
+
+.jackets-left img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Галерея додаткових послуг */
+.extra-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.extra-left, .extra-right {
+    flex: 1 1 50%;
+    text-align: center;
+}
+
+.extra-left img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Списки послуг */
+ul {
+    list-style: disc;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+/* Контакти та підвал */
+footer {
+    background: yellow;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+/* Адаптив */
+@media (max-width: 800px) {
+    .extra-content,
+    .washing-equipment,
+    .jackets-content,
+    .gallery {
+        flex-direction: column;
+    }
+    .extra-left, .extra-right,
+    .equipment-item,
+    .jackets-left,
+    .jackets-right,
+    .gallery-item {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+    .hero {
+        padding: 30px 10px;
+    }
+}
